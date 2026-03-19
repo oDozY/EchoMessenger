@@ -37,42 +37,48 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
-            lblTitle.Font = new Font("맑은 고딕", 35F);
+            lblTitle.Font = new Font("Trebuchet MS", 35F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTitle.ForeColor = SystemColors.GrayText;
             lblTitle.Location = new Point(12, 9);
             lblTitle.Name = "lblTitle";
-            lblTitle.Size = new Size(559, 93);
+            lblTitle.Size = new Size(527, 89);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Echo Messenger";
             // 
             // txtInput
             // 
-            txtInput.Location = new Point(12, 714);
+            txtInput.BackColor = SystemColors.GradientInactiveCaption;
+            txtInput.Location = new Point(60, 714);
             txtInput.Name = "txtInput";
             txtInput.Size = new Size(823, 31);
             txtInput.TabIndex = 1;
             // 
             // lstMessages
             // 
+            lstMessages.BackColor = SystemColors.GradientInactiveCaption;
             lstMessages.FormattingEnabled = true;
             lstMessages.Location = new Point(12, 143);
             lstMessages.Name = "lstMessages";
-            lstMessages.Size = new Size(1071, 504);
+            lstMessages.Size = new Size(1169, 504);
             lstMessages.TabIndex = 2;
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(909, 714);
+            btnSend.BackColor = SystemColors.GradientInactiveCaption;
+            btnSend.BackgroundImageLayout = ImageLayout.None;
+            btnSend.Location = new Point(953, 714);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(174, 31);
             btnSend.TabIndex = 3;
             btnSend.Text = "전송";
-            btnSend.UseVisualStyleBackColor = true;
+            btnSend.UseVisualStyleBackColor = false;
             btnSend.Click += btnSend_Click;
             // 
             // frmTitle
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.InactiveCaption;
             ClientSize = new Size(1209, 887);
             Controls.Add(btnSend);
             Controls.Add(lstMessages);
