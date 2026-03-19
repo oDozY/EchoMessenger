@@ -52,6 +52,7 @@
             txtInput.Name = "txtInput";
             txtInput.Size = new Size(823, 31);
             txtInput.TabIndex = 1;
+            txtInput.KeyDown += txtInput_KeyDown;
             // 
             // lstMessages
             // 
